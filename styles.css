@@ -1070,6 +1070,11 @@ html {
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
 }
 
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity, 1));
+}
+
 .bg-\[hsl\(206\2c 94\%\2c 96\%\)\] {
   --tw-bg-opacity: 1;
   background-color: hsl(206 94% 96% / var(--tw-bg-opacity, 1));
@@ -1418,6 +1423,42 @@ html {
 .hover\:border-purple-950:hover {
   --tw-border-opacity: 1;
   border-color: rgb(59 7 100 / var(--tw-border-opacity, 1));
+}
+
+.hover\:border-indigo-900:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(49 46 129 / var(--tw-border-opacity, 1));
+}
+
+.hover\:border-purple-900:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(88 28 135 / var(--tw-border-opacity, 1));
+}
+
+.hover\:text-\[hsl\(213\2c 96\%\2c 18\%\)\]:hover {
+  --tw-text-opacity: 1;
+  color: hsl(213 96% 18% / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-purple-950:hover {
+  --tw-text-opacity: 1;
+  color: rgb(59 7 100 / var(--tw-text-opacity, 1));
+}
+
+.hover\:opacity-50:hover {
+  opacity: 0.5;
+}
+
+.hover\:opacity-25:hover {
+  opacity: 0.25;
+}
+
+.hover\:opacity-70:hover {
+  opacity: 0.7;
+}
+
+.hover\:opacity-90:hover {
+  opacity: 0.9;
 }
 
 .focus\:cursor-pointer:focus {

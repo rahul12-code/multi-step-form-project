@@ -242,8 +242,8 @@ plansContainer.addEventListener('click', (eve) => {
 
     // Reset all cards' styles
     cardArray.forEach((card) => {
-        card.style.border = '1px solid hsl(231, 11%, 63%)';
-        card.style.backgroundColor = 'hsl(0, 0%, 100%)';
+        card.style.border = '1px solid hsl(229,24%,87%)';
+        card.style.backgroundColor = 'transparent';
     });
 
     // Highlight the selected card
@@ -297,7 +297,7 @@ allAddOns.forEach((addOn) => {
             delete selectedServices[addOnName];
 
             // Reset unselected styling
-            addOn.style.borderColor = "black";
+            addOn.style.borderColor = "hsl(229,24%,87%)";
             addOn.style.backgroundColor = "transparent";
         }
         console.log("Selected Services:", selectedServices);
@@ -412,13 +412,13 @@ hidingPages(count);
 
 nxt_btn.onclick = () => {
 
-    if (count === 1) {
-        // Validate inputs when count is 1
-        if (!validateInputs()) {
-            console.error("Inputs are not valid.");
-            return; // Exit early if inputs are invalid
-        }
-    }
+    // if (count === 1) {
+    //     // Validate inputs when count is 1
+    //     if (!validateInputs()) {
+    //         console.error("Inputs are not valid.");
+    //         return; // Exit early if inputs are invalid
+    //     }
+    // }
 
     if (count < 5) {
         count += 1;
