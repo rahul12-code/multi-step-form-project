@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -12,66 +11,279 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <title>Multi-step form</title>
+    <link rel="stylesheet" href="styles.css">
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>Multi-step form MAIN</title>
+
+   
   </head>
-  <body>
-    <!-- Sidebar start -->
 
-    Step 1 Your info Step 2 Select plan Step 3 Add-ons Step 4 Summary
+  <body class="bg-[hsl(206,94%,96%)] h-[100dvh] flex justify-center items-center">
 
-    <!-- Sidebar end -->
+    <div class="main-container flex min-w-[min(100%,900px)] max-w-[900px] w-full h-full rounded-none m-0 p-0 flex-col md:bg-white md:h-[70%] md:flex-row md:p-3 md:rounded-lg md:m-8">
 
-    <!-- Step 1 start -->
+      <img src="assets/images/bg-sidebar-desktop.svg" alt="Desktop Sidebar" class="md:block md:h-full hidden ">
+      <img src="assets/images/bg-sidebar-mobile.svg" alt="Mobile Sidebar" class="md:hidden w-full object-contain">
 
-    Personal info Please provide your name, email address, and phone number.
-    Name e.g. Stephen King Email Address e.g. stephenking@lorem.com Phone Number
-    e.g. +1 234 567 890 Next Step
+      <!-- Sidebar start -->
+      <div class="side-bar md:absolute">
 
-    <!-- Step 1 end -->
+        <div class="step-details-menu flex flex-row justify-center items-center gap-4 p-0 absolute top-0 w-full h-fit md:flex-col md:justify-start md:items-start md:static md:top-0 md:w-full md:pt-8 md:pl-7">
 
-    <!-- Step 2 start -->
+          <div class="menu-step flex mx-0 my-6 md:justify-center md:items-center md:my-1">
+            <div id="circle1" class="circle active-circle bg-blue-200 text-[hsl(213, 96%, 18%)] border border-none w-10 h-10 rounded-full flex justify-center items-center font-bold">1</div>
+            <div class="step-details hidden md:block md:my-0 md:mx-4 md:leading-[1.3rem] md:ml-3">
+              <div class="step-heading text-gray-300 text-[0.9rem]">STEP 1</div>
+              <div class="step-name text-white font-bold">YOUR INFO</div>
+            </div>
+          </div>
+  
+          <div class="menu-step flex mx-0 my-6 md:justify-center md:items-center md:my-1">
+            <div id="circle2" class="circle w-10 h-10 rounded-full border border-white text-white flex justify-center items-center font-bold">2</div>
+            <div class="step-details hidden md:block md:my-0 md:mx-4 md:leading-[1.3rem] md:ml-3">
+              <div class="step-heading text-gray-300 text-[0.9rem]">STEP 2</div>
+              <div class="step-name text-white font-bold">SELECT PLAN</div>
+            </div>
+          </div>
+  
+          <div class="menu-step flex mx-0 my-6 md:justify-center md:items-center md:my-1">
+            <div id="circle3" class="circle w-10 h-10 rounded-full border border-white text-white flex justify-center items-center font-bold">3</div>
+            <div class="step-details hidden md:block md:my-0 md:mx-4 md:leading-[1.3rem] md:ml-3">
+              <div class="step-heading text-gray-300 text-[0.9rem]">STEP 3</div>
+              <div class="step-name text-white font-bold">ADD-ONS</div>
+            </div>
+          </div>
+  
+          <div class="menu-step flex mx-0 my-6 md:justify-center md:items-center md:my-1">
+            <div id="circle4" class="circle w-10 h-10 rounded-full border border-white text-white flex justify-center items-center font-bold">4</div>
+            <div class="step-details hidden md:block md:my-0 md:mx-4 md:leading-[1.3rem] md:ml-3">
+              <div class="step-heading text-gray-300 text-[0.9rem]">STEP 4</div>
+              <div class="step-name text-white font-bold">SUMMARY</div>
+            </div>
+          </div>
+        </div>
 
-    Select your plan You have the option of monthly or yearly billing. Arcade
-    $9/mo Advanced $12/mo Pro $15/mo Monthly Yearly Go Back Next Step
+      </div>
 
-    <!-- Step 2 end -->
+      <!-- Sidebar end -->
+      
 
-    <!-- Step 3 start -->
+      <div class="form-container flex flex-col bg-white w-[90%] -mt-24 mx-auto min-w-[min(90%,600px)] max-w-[600px] px-6 py-4 z-0 rounded-xl md:w-full md:mt-0 md:min-w-0 md:max-w-full md:px-[5rem] md:py-[1rem]">
 
-    Pick add-ons Add-ons help enhance your gaming experience. Online service
-    Access to multiplayer games +$1/mo Larger storage Extra 1TB of cloud save
-    +$2/mo Customizable Profile Custom theme on your profile +$2/mo Go Back Next
-    Step
+        <div class="section-heading-div py-4 px-0 pb-1 md:pb-5">
+          <h1 class="section-heading text-[hsl(213,96%,18%)] text-[1.75rem] mb-1 font-bold">Personal info</h1>
+          <p class="section-info text-gray-500 text-[0.9rem] ">Please provide your name, email address, and phone number.</p>
+        </div>
 
-    <!-- Step 3 end -->
+        <!-- Step 1 start -->
+        
+        <div class="step-1 step-box flex flex-col mb-auto w-full pt-4 px-0 ">
 
-    <!-- Step 4 start -->
+          <div class="label-error flex justify-between">
+            <label for="name" class="text-[hsl(213,96%,18%)] font-medium">Name</label>
+            <p class="error name-error text-[0.8rem] text-red-700 font-medium invisible">This field is required</p>
+          </div>
+          <input type="text" id="name" placeholder="e.g. Stephen King" class="name text-[hsl(213,96%,18%)] font-bold p-3 my-1.5 mb-4 rounded border border-[hsl(229,24%,87%)] 
+          outline-none text-[0.8rem] md:text-[0.9rem] md:my-1 md:mb-6 md:h-[80%] placeholder:text-[13px] focus:cursor-pointer focus:border-blue-950 active:bg-none">
 
-    Finishing up Double-check everything looks OK before confirming.
+          <div class="label-error flex justify-between">
+            <label for="name" class="text-[hsl(213,96%,18%)] font-medium">Email Address</label>
+            <p class="error email-error text-[0.8rem] text-red-700 font-medium invisible">This field is required</p>
+          </div>
+          <input type="email" id="email" placeholder="e.g. stephenking@lorem.com" class="email text-[hsl(213,96%,18%)] font-bold p-3 my-1.5 mb-4 rounded border border-[hsl(229,24%,87%)]
+          outline-none text-[0.8rem] md:text-[0.9rem] md:my-1 md:mb-6 md:h-[80%] placeholder:text-[13px] focus:cursor-pointer focus:border-blue-950 active:bg-none">
 
-    <!-- Dynamically add subscription and add-on selections here -->
+          <div class="label-error flex justify-between">
+            <label for="name" class="text-[hsl(213,96%,18%)] font-medium">Phone Number</label>
+            <p class="error number-error text-[0.8rem] text-red-700 font-medium invisible">This field is required</p>
+          </div>
+          <input type="tel" id="number" placeholder="e.g. +1 234 567 890" class="number text-[hsl(213,96%,18%)] font-bold p-3 my-1.5 mb-4 rounded border border-[hsl(229,24%,87%)]
+          outline-none text-[0.8rem] md:text-[0.9rem] md:my-1 md:mb-6 md:h-[80%] placeholder:text-[13px] focus:cursor-pointer focus:border-blue-950 active:bg-none">
 
-    Total (per month/year) Go Back Confirm
+        </div>
 
-    <!-- Step 4 end -->
+        <!-- Step 1 end -->
 
-    <!-- Step 5 start -->
+        <!-- Step 2 start -->
 
-    Thank you! Thanks for confirming your subscription! We hope you have fun
-    using our platform. If you ever need support, please feel free to email us
-    at support@loremgaming.com.
+        <div class="step-2 step-box flex flex-col mb-auto w-full py-4 px-0 ">
 
-    <!-- Step 5 end -->
+          <div class="plan-container flex justify-between flex-col gap-4 mb-10 md:flex-row md:mb-6">
+
+            
+            <div class="card active-card flex w-full gap-3 rounded-xl p-2 border border-purple-950 bg-[rgba(68,33,93,0.1)] md:flex-col md:w-[33.33%] md:p-4 md:gap-0
+            hover:cursor-pointer hover:border hover:border-purple-950" id="card1" data-name="Arcade">
+              <img src="assets/images/icon-arcade.svg" alt="" class="image md:w-10 md:h-10 md:mb-9" >
+              
+              <div class="price_content">
+                <h2 class="text-[18px] text-blue-950 font-bold">Arcade</h2>
+                <p class="price text-[16px] text-gray-600" data-year_price="90" data-month_price="9">$9/mo</p>
+
+                <p class="offer text-[13px] text-blue-950 font-medium hidden">2 months free</p>
+              </div>
+              
+            </div>
+
+           
+            <div class="card flex w-full gap-3 rounded-xl p-2 border border-gray-500 md:flex-col md:w-[33.33%] md:p-4 md:gap-0
+            hover:cursor-pointer hover:border hover:border-purple-950" id="card2" data-name="Advanced">
+              <img src="assets/images/icon-advanced.svg" alt="" class="image md:w-10 md:h-10 md:mb-9">
+              
+              <div class="price_content">
+                <h2 class="text-[18px] text-blue-950 font-bold">Advanced</h2>
+                <p class="price text-[16px] text-gray-600" data-year_price="120" data-month_price="12">$12/mo</p>
+                <p class="offer text-[13px] text-blue-950 font-medium hidden">2 months free</p>
+              </div>
+              
+            </div>
+
+            
+            <div class="card flex w-full gap-3 rounded-xl p-2 border border-gray-500 md:flex-col md:w-[33.33%] md:p-4 md:gap-0
+            hover:cursor-pointer hover:border hover:border-purple-950" id="card3" data-name="Pro">
+              <img src="assets/images/icon-pro.svg" alt="" class="image md:w-10 md:h-10 md:mb-9">
+              
+              <div class="price_content">
+                <h2 class="text-[18px] text-blue-950 font-bold">Pro</h2>
+                <p class="price text-[16px] text-gray-600" data-year_price="150" data-month_price="15">$15/mo</p>
+                <p class="offer text-[13px] text-blue-950 font-medium hidden">2 months free</p>
+              </div>
+              
+            </div>
+          </div> 
+
+          <div class="toggle-container text-[18px] font-semibold text-[hsl(234,14%,74%)] flex items-center justify-center gap-5 p-2.5 mb-7.5 bg-purple-100 rounded-lg">
+            <span id="month" class="text-blue-950">Monthly</span>
+
+            <label class="toggle-switch relative inline-block w-[50px] h-[25px]">
+              <input type="checkbox" class="peer h-5 w-5 md:h-4 md:w-4 opacity-0" id="toggleSwitch">
+                
+              <span class="w-[50px] h-[25px] bg-[hsl(213,96%,18%)] rounded-full absolute top-0 left-0 right-0 bottom-0 peer-checked:after:translate-x-6 after:content-[''] after:absolute 
+              after:left-[4px] after:bottom-[4px] after:w-[18px] after:h-[18px] after:top-[3px] 
+                after:start-[3.5px] after:bg-white  after:border after:rounded-full after:transition-all after:duration-300">
+              </span>
+            </label>
+            <span id="year">Yearly</span>
+          </div>
+
+        </div>
+
+        <!-- Step 2 end -->
+
+
+
+        <!-- Step 3 start -->
+        <div class="step-3 step-box flex flex-col mb-auto w-full py-4 px-0">
+
+          <div class="addonsContainer">
+
+            <div class="add-ons flex justify-between items-center rounded-md w-full border border-gray-500 p-3 mb-4 ">
+              
+              <div class="checkbox-matter flex items-center gap-4 md:gap-6">
+                <input type="checkbox" class="h-5 w-5 md:h-4 md:w-4">
+            
+                <div class="checkbox-content">
+                  <h3 class="text-[16px] md:text-[18px] text-blue-950 font-bold">Online Service</h3>
+                  <p class="text-[14px] md:text-[15px] text-gray-600">Access to multiplayer games</p>
+                </div>
+
+              </div>
+              
+              <p class="addonsPrice text-[15px] text-purple-900 font-medium" data-year_price="10" data-month_price="1">+$1/mo</p>
+            </div>
+
+            <div class="add-ons flex justify-between items-center rounded-md w-full border border-gray-500 p-3 mb-4">
+              <div class="checkbox-matter flex items-center gap-4 md:gap-6">
+                <input type="checkbox" class="h-5 w-5 md:h-4 md:w-4">
+
+                <div class="checkbox-content">
+                  <h3 class="text-[16px] md:text-[18px] text-blue-950 font-bold">Larger storage</h3>
+                  <p class="text-[14px] md:text-[15px] text-gray-600">Extra 1TB of cloud save</p>
+                </div>
+              </div>
+              
+              <p class="addonsPrice text-[15px] text-purple-900 font-medium" data-year_price="20" data-month_price="2">+$2/mo</p>
+            </div>
+
+            <div class="add-ons flex justify-between items-center rounded-md w-full border border-gray-500 p-3 mb-4">
+
+              <div class="checkbox-matter flex items-center gap-4 md:gap-6">
+                <input type="checkbox" class="h-5 w-5 md:h-4 md:w-4">
+                <div class="checkbox-content">
+                  <h3 class="text-[16px] md:text-[18px] text-blue-950 font-bold">Customizable profile</h3>
+                  <p class="text-[14px] md:text-[15px] text-gray-600">Custom theme on your profile</p>
+                </div>
+              </div>
+              
+              <p class="addonsPrice text-[15px] text-purple-900 font-medium" data-year_price="20" data-month_price="2">+$2/mo</p>
+
+            </div>
+
+          </div>
+          
+        </div>
+
+        <!-- Step 3 end -->
+
+        <!-- Step 4 start -->
+
+        <div class="step-4 step-box flex flex-col mb-auto w-full py-4 px-0">
+          <div class="selected-details-box bg-[hsl(240,60%,98%)] rounded-lg p-4 md:p-6">
+
+            <div class="selected-plan flex justify-between items-center pb-6 ">
+              <div class="selected-plan-details">
+                <div class="plan-name text-blue-950 font-bold leading-7">Arcade (Monthly)</div>
+                <button class="change-plan-button bg-none border-none text-[hsl(0,0%,47%)] text-sm underline">Change</button>
+              </div>
+
+              <div class="plan-price selected-plan-price text-[1rem] font-bold text-blue-950">$9/mo</div>
+            </div>
+
+            <!-- Container for add-ons -->
+            <div class="add-ons-container"></div>
+
+
+            <div class="selected-add-on template hidden justify-between items-center py-2 ">
+              <div class="add-on-name text-[1rem] font-medium text-gray-600">Template Service</div>
+              <div class="add-on-price text-blue-950 font-semibold text-[1rem]">+$X/yr</div>
+            </div>
+
+          </div>
+
+          <div class="total-price-box my-4 p-4 flex justify-between">
+            <div class="total-name text-gray-600 text-[1rem] font-medium">Total (per month)</div>
+            <div class="total-price text-purple-950 text-[1.25rem] font-bold md:text-[1.5rem]">$9/mo</div>
+          </div>
+
+        </div>
+
+        <!-- Step 4 end -->
+
+
+        <!-- Step 5 start -->
+
+        <div class="step-5 step-box flex flex-col justify-center items-center text-center gap-2 mb-auto w-full h-full py-20 px-0 md:py-4 md:px-0">
+          <img src="assets/images/icon-thank-you.svg" alt="">
+          <div class="thank-you text-blue-950 text-[1.5rem] font-bold mt-4">Thank you!</div>
+          <div class="thank-you-matter text-gray-600 leading-6">Thanks for confirming your subscription! We hope you have fun
+          using our platform. If you ever need support, please feel free to email us
+          at support@loremgaming.com.</div>
+        </div>
+
+
+        <!-- Step 5 end -->
+         
+
+        <div class="navigation w-full flex justify-between self-center absolute bottom-0 p-4 bg-white md:relative md:p-0 ">
+          <button class="go-back bg-none border-none text-[hsl(231,11%,63%)] text-[18px] cursor-pointer font-bold invisible">Go Back</button>
+          <button class="next-step bg-[hsl(213,96%,18%)] text-white border-none py-2 px-4 rounded-lg text-center text-[1rem] cursor-pointer font-bold">Next Step</button>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
   </body>
+  
 </html>
