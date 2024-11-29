@@ -113,7 +113,7 @@ function updateStep(count) {
 
     if (count===4){
         nxt_btn.innerText = 'Confirm';
-        nxt_btn.style.backgroundColor='hsl(243, 43%, 45%)';
+        nxt_btn.style.backgroundColor='hsl(243, 100%, 62%)';
     }else{
         nxt_btn.innerText= 'Next Step';
         nxt_btn.style.backgroundColor='hsl(213, 96%, 18%)'
@@ -250,7 +250,7 @@ plansContainer.addEventListener('click', (eve) => {
 
     // Highlight the selected card
     targetCard.style.border = '1px solid indigo';
-    targetCard.style.backgroundColor = 'rgba(123, 3, 209, 0.1)';
+    targetCard.style.backgroundColor = 'hsl(206,94%,96%)';
 
     const word = toggleSwitch.checked ? '(Yearly)' : '(Monthly)';
     const priceType = toggleSwitch.checked ? 'year_price' : 'month_price';
@@ -293,7 +293,7 @@ allAddOns.forEach((addOn) => {
 
             // Apply selected styling
             addOn.style.borderColor = "indigo";
-            addOn.style.backgroundColor = "rgba(123, 3, 209, 0.1)";
+            addOn.style.backgroundColor = "hsl(206,94%,96%)";
         } else {
             // Remove unchecked add-on from the object
             delete selectedServices[addOnName];
@@ -411,13 +411,13 @@ hidingPages(count);
 
 nxt_btn.onclick = () => {
 
-    if (count === 1) {
-        // Validate inputs when count is 1
-        if (!validateInputs()) {
-            console.error("Inputs are not valid.");
-            return; // Exit early if inputs are invalid
-        }
-    }
+    // if (count === 1) {
+    //     // Validate inputs when count is 1
+    //     if (!validateInputs()) {
+    //         console.error("Inputs are not valid.");
+    //         return; // Exit early if inputs are invalid
+    //     }
+    // }
 
     if (count < 5) {
         count += 1;
