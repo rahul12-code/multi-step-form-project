@@ -56,6 +56,8 @@ const changePlanButton = document.querySelector(".change-plan-button");
 const addOnContainer = document.querySelector(".add-ons-container"); // Proper container for add-ons
 // const addOnTemplate = document.querySelector(".selected-add-on.template");
 const addOnTemplate = document.querySelector(".selected-add-on");
+console.log(addOnTemplate);
+
 const selectedPlan = document.querySelector(".selected-plan");
 
 const totalName = document.querySelector('.total-name');
@@ -232,7 +234,7 @@ toggleSwitch.addEventListener('change', () => {
 // SELECTING PLAN, STORING IT IN AN ARRAY
 
 plansContainer.addEventListener('click', (eve) => {
-    const targetCard = eve.target;
+    const targetCard = eve.target.closest('.card');
 
     // NodeList to an Array
     const cardArray = Array.from(cards);
@@ -346,12 +348,9 @@ function renderAddOns(selectedServices) {
     }
     // Loop through selectedServices and clone the template
     for (const [serviceName, servicePrice] of Object.entries(selectedServices)) {
-      const addOnClone = addOnTemplate.cloneNode(true); // Deep clone the template
+      const addOnClone = addOnTemplate.cloneNode(true);
+      console.log(addOnClone); 
       addOnClone.style.display = "flex"; // Make it visible
-      addOnClone.style.justifyContent = "space-between"; // Add justify-between class properly
-  
-      // Remove the template class by modifying className
-      addOnClone.className = "selected-add-on";
   
       // Update the cloned element's content
       addOnClone.querySelector(".add-on-name").textContent = serviceName;
@@ -412,13 +411,13 @@ hidingPages(count);
 
 nxt_btn.onclick = () => {
 
-    if (count === 1) {
-        // Validate inputs when count is 1
-        if (!validateInputs()) {
-            console.error("Inputs are not valid.");
-            return; // Exit early if inputs are invalid
-        }
-    }
+    // if (count === 1) {
+    //     // Validate inputs when count is 1
+    //     if (!validateInputs()) {
+    //         console.error("Inputs are not valid.");
+    //         return; // Exit early if inputs are invalid
+    //     }
+    // }
 
     if (count < 5) {
         count += 1;
