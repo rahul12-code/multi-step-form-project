@@ -411,13 +411,13 @@ hidingPages(count);
 
 nxt_btn.onclick = () => {
 
-    // if (count === 1) {
-    //     // Validate inputs when count is 1
-    //     if (!validateInputs()) {
-    //         console.error("Inputs are not valid.");
-    //         return; // Exit early if inputs are invalid
-    //     }
-    // }
+    if (count === 1) {
+        // Validate inputs when count is 1
+        if (!validateInputs()) {
+            console.error("Inputs are not valid.");
+            return; // Exit early if inputs are invalid
+        }
+    }
 
     if (count < 5) {
         count += 1;
