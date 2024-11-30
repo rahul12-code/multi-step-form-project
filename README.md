@@ -1,64 +1,77 @@
-## Welcome! 👋
+# Multi-Step Form Project
 
-Thanks for checking out this front-end coding challenge.
+## Table of Contents
 
-**To do this challenge, you need a good understanding of HTML, CSS and JavaScript.**
+- [Overview](#overview)
+  - [The Challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My Process](#my-process)
+  - [Built With](#built-with)
+  - [What I Learned](#what-i-learned)
+  - [Continued Development](#continued-development)
+  - [Useful Resources](#useful-resources)
+- [Acknowledgments](#acknowledgments)
 
-## The challenge
+## Overview
 
-Your challenge is to build out this multi-step form and get it looking as close to the design as possible.
+### The Challenge
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+This project is a multi-step form where users can:
 
-Your users should be able to:
+- Complete each step of the form sequence seamlessly.
+- Navigate back to previous steps to update their inputs.
+- View a summary of their inputs on the final step and confirm their submission.
+- Experience a responsive interface that adapts to different screen sizes.
+- Interact with hover and focus states for all clickable elements.
+- Receive form validation messages when:
+  - A required field is not filled.
+  - An email address is incorrectly formatted.
+  - A step is submitted without any input.
 
-- Complete each step of the sequence
-- Go back to a previous step to update their selections
-- See a summary of their selections on the final step and confirm their order
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
-- Receive form validation messages if:
-  - A field has been missed
-  - The email address is not formatted correctly
-  - A step is submitted, but no selection has been made
+### Screenshot
 
-## Where to find everything
+![Screenshot of Multi-Step Form](./multi-step%20form.jpg)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+- **Solution URL**: [View the GitLab Repository](https://gitlab.com/rahulkandati/multi-step-form-project.git)
+- **Live Site URL**: [Visit the Deployed Project](https://multi-step-form-project-blush.vercel.app/)
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+## My Process
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+### Built With
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- **HTML5** and **CSS3** for structure and styling.
+- **JavaScript** for dynamic functionality and DOM manipulation.
+- **Tailwind CSS** framework for efficient and responsive design.
+- **Mobile-first workflow** for improved accessibility and user experience.
 
-## Building your project
+### What I Learned
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+This project provided significant insights into the following:
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- **Tailwind CSS**: Leveraged utility-first classes to quickly style components, enhancing design efficiency.
+- **DOM Manipulation**: Managed multiple steps dynamically by updating the DOM as the user navigates through the form.
+- **Form Validation**: Implemented real-time validation for required fields, email formatting, and step submissions.
 
-## Deploying your project
+### Continued Development
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+Future improvements and areas to focus on include:
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- Incorporating `localStorage` or `sessionStorage` to save form progress.
+- Implementing an API integration to handle form submissions.
+- Exploring advanced frameworks like React for state management in multi-step forms.
 
-## Create a custom `README.md`
+### Useful Resources
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs) - An excellent resource for understanding and utilizing Tailwind utilities.
+- [MDN Web Docs](https://developer.mozilla.org/) - Provided detailed information about DOM manipulation and form validation.
+- [The Markdown Guide](https://www.markdownguide.org/) - Helped with writing clear and concise markdown documentation.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+## Acknowledgments
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+A big thanks to:
 
-**Have fun building!** 🚀
+- **Tailwind Labs** for creating such a powerful framework.
+- The online community and forums for providing guidance and solutions during development.
