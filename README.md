@@ -71,7 +71,7 @@ Future improvements and areas to focus on include:
 
 ## Acknowledgments
 
-A big thanks to:
+A big thanks to: 
 
 - **Tailwind Labs** for creating such a powerful framework.
 - The online community and forums for providing guidance and solutions during development.
